@@ -12,6 +12,11 @@ int main(int argc, char *argv[]) {
 		perror("Error al abrir el fichero");
 		return 0;
 	}
+	if(origen==NULL)
+	{
+		perror("Error al abrir el fichero");
+		return 0;
+	}
 	while(!feof(origen))
 	{
 		fgets(cadena[lineas],100,origen);
